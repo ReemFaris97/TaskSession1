@@ -12,7 +12,7 @@ export class MyFirstComponentComponent {   /// must have a implementation
   @Output() name2 =  new EventEmitter<string>();   //constructor
 
   btnViewScnd(){
-    this.name2.emit(this.name1 + " some text");
+    this.name2.emit(this.name1);
   }
   constructor() { 
     // console.log(this.name2);
